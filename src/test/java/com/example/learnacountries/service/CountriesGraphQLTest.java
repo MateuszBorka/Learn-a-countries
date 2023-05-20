@@ -28,8 +28,8 @@ public class CountriesGraphQLTest {     //This class is supposed to test Countri
                 "Vatican City", "Kosovo"
         );
 
-        List<String> answer = CountriesGraphQL.getRandomCountriesFromContinentNames("EU", 5);
-        List<String> answer2 = CountriesGraphQL.getRandomCountriesFromContinentNames("EU", 5);
+        List<String> answer = CountriesGraphQL.getRandomCountriesNamesFromContinent("EU", 5);
+        List<String> answer2 = CountriesGraphQL.getRandomCountriesNamesFromContinent("EU", 5);
 
         assertEquals(5, answer.size());             //size of answer should be the same as in call
         assertTrue(countriesInEurope.containsAll(answer));  //answer should be sublist of countriesInEurope
