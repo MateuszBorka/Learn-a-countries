@@ -22,7 +22,8 @@ public class CountriesGraphQL {
     //@Value("${graphqlApiUrl}")
     private static String apiUrl = "https://countries.trevorblades.com/graphql";
 
-    public static List<String> getRandomCountriesFromContinentNames(String continent, int count){
+    public static List<String> getRandomCountriesNamesFromContinent(String continent, int count){
+
 
         List<String> allCountriesFromContinent;
         String requestBody = "{\"query\": \"query { continent(code: \\\"" + continent + "\\\") { countries { name } } }\"}";
