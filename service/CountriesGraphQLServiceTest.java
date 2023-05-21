@@ -35,9 +35,9 @@ public class CountriesGraphQLServiceTest {     //This class is supposed to test 
         List<String> answer = service.getRandomCountriesNamesFromContinent("EU", 5);
         List<String> answer2 = service.getRandomCountriesNamesFromContinent("EU", 5);
 
-        assertEquals(5, answer.size());             //size of answer should be the same as in call
-        assertTrue(countriesInEurope.containsAll(answer));  //answer should be sublist of countriesInEurope
-        assertNotEquals(answer, answer2);                   //result of call should return random countries
+        Assertions.assertEquals(5, answer.size());             //size of answer should be the same as in call
+        Assertions.assertTrue(countriesInEurope.containsAll(answer));  //answer should be sublist of countriesInEurope
+        Assertions.assertNotEquals(answer, answer2);                   //result of call should return random countries
 
     }
 }
