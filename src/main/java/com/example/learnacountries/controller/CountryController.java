@@ -29,6 +29,8 @@ public class CountryController {
             @RequestBody CountriesRequestDto request) {
         validator.validate(request);
         List<Country> countries = service.generateCountriesList(request);
+
+
         return ResponseEntity.ok(countries);
     }
 

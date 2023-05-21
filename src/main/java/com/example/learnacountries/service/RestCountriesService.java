@@ -7,21 +7,18 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
-
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-
-
-
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 @Component
 @Getter
@@ -32,15 +29,15 @@ public class RestCountriesService {
     @Value("${restCountriesUrl}")
     private String apiUrl;
 
-    public List<Country> getCountriesDetails(List<String> countriesNames){
+    public List<Country> getCountriesDetails(List<String> countriesNames) {
         List<Country> countriesWithDetails = new ArrayList<>();
-        for (String countryName: countriesNames) {
+        for (String countryName : countriesNames) {
             countriesWithDetails.add(getCountryDetails(countryName));
         }
         return countriesWithDetails;
     }
 
-    public Country getCountryDetails(String country){
+    public Country getCountryDetails(String country) {
 
         String restCountriesUrl = apiUrl + country;
         Country countryWithDetails = new Country();
@@ -48,7 +45,7 @@ public class RestCountriesService {
             String jsonResponse;
             try {
                 jsonResponse = getJsonResponse(restCountriesUrl);
-            } catch (IllegalArgumentException e){       //There is no information about country
+            } catch (IllegalArgumentException e) {       //There is no information about country
                 countryWithDetails.setPresentInRestDatabase(false);
                 countryWithDetails.setOfficial(country);
                 return countryWithDetails;
@@ -63,14 +60,14 @@ public class RestCountriesService {
             countryWithDetails.setSubregion(rootNode.get(0).get("subregion").asText());
 
             JsonNode currenciesNode = rootNode.get(0).get("currencies");
-            for(JsonNode currencyNode : currenciesNode){
+            for (JsonNode currencyNode : currenciesNode) {
                 countryWithDetails.addCurrency(
                         new CountryCurrency(currencyNode.get("name").asText(), currencyNode.get("symbol").asText())
                 );
             }
 
             JsonNode languagesNode = rootNode.get(0).get("languages");
-            for(JsonNode language : languagesNode){
+            for (JsonNode language : languagesNode) {
                 countryWithDetails.addLanguage(language.asText());
             }
         } catch (IOException e) {
@@ -95,7 +92,6 @@ public class RestCountriesService {
 //    public static void main(String[] args) {
 //        ArrayList<Country> countries = getCountriesDetails();
 //    }
-
 
 
 }

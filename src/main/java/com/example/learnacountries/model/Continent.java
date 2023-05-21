@@ -28,8 +28,8 @@ public class Continent {
     }
 
     public static String getContinentCode(String name) {
-        for(Map.Entry<String, String> entry : continentMap.entrySet()){
-            if (entry.getValue().equals(name)){
+        for (Map.Entry<String, String> entry : continentMap.entrySet()) {
+            if (entry.getValue().equals(name)) {
                 return entry.getKey();
             }
         }
@@ -40,5 +40,7 @@ public class Continent {
         return new ArrayList<>(continentMap.values());
     }
 
-    public static List<String> getAllContinentCodes(){ return new ArrayList<>(continentMap.keySet());}
+    public static List<String> getAllContinentCodes() {
+        return new ArrayList<>(continentMap.keySet());
+    }
 }

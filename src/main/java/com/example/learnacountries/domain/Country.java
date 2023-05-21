@@ -26,17 +26,13 @@ public class Country {
 
     boolean isPresentInRestDatabase;
 
-    public void addCurrency(CountryCurrency currency){
+    public void addCurrency(CountryCurrency currency) {
         currencies.add(currency);
     }
 
-    public void addLanguage(String language){
+    public void addLanguage(String language) {
         languages.add(language);
     }
-
-
-
-
 
 
 }

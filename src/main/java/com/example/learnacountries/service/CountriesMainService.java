@@ -6,6 +6,7 @@ import com.example.learnacountries.model.Continent;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
+import java.util.Comparator;
 import java.util.List;
 
 @Component
@@ -20,6 +21,10 @@ public class CountriesMainService {
                 Continent.getContinentCode(request.getContinent()), request.getCount()
         );
         List<Country> countriesWithDetails = restService.getCountriesDetails(countriesNames);
+
+        Comparator<Country> countryComparator = Comparator.comparing(Country::getOfficial);
+        countriesWithDetails.sort(countryComparator);
+
         return countriesWithDetails;
     }
 }

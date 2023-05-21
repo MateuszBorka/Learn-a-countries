@@ -2,12 +2,11 @@ package com.example.learnacountries.service;
 
 import lombok.AllArgsConstructor;
 import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.Arrays;
 import java.util.List;
-
-import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
-import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -18,8 +17,9 @@ public class CountriesGraphQLServiceTest {     //This class is supposed to test 
 
 
     private CountriesGraphQLService service;
+
     @Test
-    public void getRandomCountriesFromContinentNamesTest(){
+    public void getRandomCountriesFromContinentNamesTest() {
 
         List<String> countriesInEurope = Arrays.asList(
                 "Andorra", "Albania", "Austria", "Åland", "Bosnia and Herzegovina", "Belgium", "Bulgaria",

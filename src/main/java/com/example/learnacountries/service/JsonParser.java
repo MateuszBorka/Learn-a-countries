@@ -9,7 +9,7 @@ import java.util.List;
 
 public class JsonParser {
 
-    public static List<String> getNamesFromJson(String request){
+    public static List<String> getNamesFromJson(String request) {
 
         ObjectMapper objectMapper = new ObjectMapper();
         List<String> countryNames = new ArrayList<>();

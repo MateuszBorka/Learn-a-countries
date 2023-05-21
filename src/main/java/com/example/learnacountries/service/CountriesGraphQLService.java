@@ -23,7 +23,7 @@ public class CountriesGraphQLService {
     @Value("${graphqlApiUrl}")
     private String apiUrl;
 
-    public List<String> getRandomCountriesNamesFromContinent(String continent, int count){
+    public List<String> getRandomCountriesNamesFromContinent(String continent, int count) {
 
         List<String> allCountriesFromContinent;
         String requestBody = "{\"query\": \"query { continent(code: \\\"" + continent + "\\\") { countries { name } } }\"}";
