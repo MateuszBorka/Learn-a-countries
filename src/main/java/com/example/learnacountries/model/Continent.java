@@ -27,4 +27,6 @@ public class Continent {
     public static List<String> getAllContinentNames() {
         return new ArrayList<>(continentMap.values());
     }
+
+    public static List<String> getAllContinentCodes(){ return new ArrayList<>(continentMap.keySet());}
 }
