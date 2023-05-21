@@ -1,5 +1,6 @@
 package com.example.learnacountries.service;
 
+import lombok.AllArgsConstructor;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
@@ -12,8 +13,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 @AutoConfigureMockMvc
-public class CountriesGraphQLTest {     //This class is supposed to test CountriesGraphQL and JsonParser classes
+@AllArgsConstructor
+public class CountriesGraphQLServiceTest {     //This class is supposed to test CountriesGraphQLService and JsonParser classes
 
+
+    private CountriesGraphQLService service;
     @Test
     public void getRandomCountriesFromContinentNamesTest(){
 
@@ -28,8 +32,8 @@ public class CountriesGraphQLTest {     //This class is supposed to test Countri
                 "Vatican City", "Kosovo"
         );
 
-        List<String> answer = CountriesGraphQL.getRandomCountriesNamesFromContinent("EU", 5);
-        List<String> answer2 = CountriesGraphQL.getRandomCountriesNamesFromContinent("EU", 5);
+        List<String> answer = service.getRandomCountriesNamesFromContinent("EU", 5);
+        List<String> answer2 = service.getRandomCountriesNamesFromContinent("EU", 5);
 
         assertEquals(5, answer.size());             //size of answer should be the same as in call
         assertTrue(countriesInEurope.containsAll(answer));  //answer should be sublist of countriesInEurope

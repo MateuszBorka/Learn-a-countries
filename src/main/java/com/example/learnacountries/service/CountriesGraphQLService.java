@@ -3,6 +3,7 @@ package com.example.learnacountries.service;
 import com.example.learnacountries.exception.InvalidApiUrlException;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.io.BufferedReader;
@@ -17,13 +18,12 @@ import java.util.List;
 @Getter
 @Setter
 @Component
-public class CountriesGraphQL {
+public class CountriesGraphQLService {
 
-    //@Value("${graphqlApiUrl}")
-    private static String apiUrl = "https://countries.trevorblades.com/graphql";
+    @Value("${graphqlApiUrl}")
+    private String apiUrl;
 
-    public static List<String> getRandomCountriesNamesFromContinent(String continent, int count){
-
+    public List<String> getRandomCountriesNamesFromContinent(String continent, int count){
 
         List<String> allCountriesFromContinent;
         String requestBody = "{\"query\": \"query { continent(code: \\\"" + continent + "\\\") { countries { name } } }\"}";
@@ -65,7 +65,5 @@ public class CountriesGraphQL {
         allCountriesFromContinent = JsonParser.getNamesFromJson(response.toString());
         Collections.shuffle(allCountriesFromContinent);
         return allCountriesFromContinent.subList(0, count);
-
-
     }
 }
