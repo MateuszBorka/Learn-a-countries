@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6b3431b1-e774-4d78-ad1f-fb8e3e727001" name="Changes" comment="A bit of refactoring" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Q19jAEFF45wwEviIGNebcXPEWs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/borko/Programming/projects/Learn-a-countries&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reactor&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;6397f496cf13c63cc6931028b0c5e389&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\borko\Programming\projects\Learn-a-countries" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+      <command value="mvn compile" />
+      <command value="mvn clean install" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.LearnACountriesApplication">
+    <configuration name="RestCountriesService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.learnacountries.service.RestCountriesService" />
+      <module name="Learn-a-countries" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.learnacountries.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CountriesGraphQLServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Learn-a-countries" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.learnacountries.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.learnacountries.service" />
+      <option name="MAIN_CLASS_NAME" value="com.example.learnacountries.service.CountriesGraphQLServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CountriesGraphQLServiceTest.getRandomCountriesFromContinentNamesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Learn-a-countries" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.learnacountries.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.learnacountries.service" />
+      <option name="MAIN_CLASS_NAME" value="com.example.learnacountries.service.CountriesGraphQLServiceTest" />
+      <option name="METHOD_NAME" value="getRandomCountriesFromContinentNamesTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LearnACountriesApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Learn-a-countries" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.learnacountries.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.learnacountries" />
+      <option name="MAIN_CLASS_NAME" value="com.example.learnacountries.LearnACountriesApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="java in Learn-a-countries" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Learn-a-countries" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LearnACountriesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Learn-a-countries" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.learnacountries.LearnACountriesApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CountriesGraphQLServiceTest" />
+        <item itemvalue="JUnit.CountriesGraphQLServiceTest.getRandomCountriesFromContinentNamesTest" />
+        <item itemvalue="Application.RestCountriesService" />
+        <item itemvalue="JUnit.java in Learn-a-countries" />
+        <item itemvalue="JUnit.LearnACountriesApplicationTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6b3431b1-e774-4d78-ad1f-fb8e3e727001" name="Changes" comment="" />
+      <created>1684510353520</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684510353520</updated>
+      <workItem from="1684510355288" duration="2316000" />
+      <workItem from="1684533019663" duration="23705000" />
+      <workItem from="1684664990551" duration="13104000" />
+      <workItem from="1684687632283" duration="2356000" />
+      <workItem from="1684691720394" duration="97000" />
+      <workItem from="1684691820836" duration="126000" />
+      <workItem from="1684692304623" duration="7457000" />
+      <workItem from="1684709675137" duration="964000" />
+      <workItem from="1684710653961" duration="1631000" />
+    </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1684510725502</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684510725502</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added GetContinents request support">
+      <created>1684592175742</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1684592175742</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Min and Max added as parameters for response">
+      <created>1684594780541</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684594780541</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added getting country from continent functionality">
+      <created>1684613255021</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684613255021</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Changed function name">
+      <created>1684613349368</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684613349368</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Tests are updated for new function names">
+      <created>1684614260601</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684614260601</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added user continent request support, +validation">
+      <created>1684667402699</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1684667402699</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added REST api request support">
+      <created>1684681847203</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1684681847203</updated>
+    </task>
+    <task id="LOCAL-00009" summary="A bit of refactoring">
+      <created>1684685013394</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1684685013394</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added corsMapping">
+      <created>1684702641677</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1684702641677</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Removed Australia and Arctica continents">
+      <created>1684702709029</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1684702709029</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added Dockerfile">
+      <created>1684705509048</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1684705509048</updated>
+    </task>
+    <task id="LOCAL-00013" summary="A bit of refactoring">
+      <created>1684711746072</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1684711746072</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <MESSAGE value="Added GetContinents request support" />
+    <MESSAGE value="Min and Max added as parameters for response" />
+    <MESSAGE value="Added getting country from continent functionality" />
+    <MESSAGE value="Changed function name" />
+    <MESSAGE value="Tests are updated for new function names" />
+    <MESSAGE value="Added user continent request support, +validation" />
+    <MESSAGE value="Added to REST api request support" />
+    <MESSAGE value="Added REST api request support" />
+    <MESSAGE value="Added corsMapping" />
+    <MESSAGE value="Removed Australia and Arctica continents" />
+    <MESSAGE value="Added Dockerfile" />
+    <MESSAGE value="A bit of refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="A bit of refactoring" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/learnacountries/controller/CountryController.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/learnacountries/controller/CountryController.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/service/CountriesGraphQLServiceTest.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/service/CountriesGraphQLServiceTest.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
