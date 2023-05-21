@@ -14,9 +14,7 @@ public class Continent {
     static {                                        // I would rather prefer to make Continent name a key of map,
                                                     // but task requires from me to create it this way
         continentMap.put("AF", "Africa");
-        continentMap.put("AN", "Antarctica");
         continentMap.put("AS", "Asia");
-        continentMap.put("AU", "Australia");
         continentMap.put("EU", "Europe");
         continentMap.put("NA", "North America");
         continentMap.put("OC", "Oceania");
