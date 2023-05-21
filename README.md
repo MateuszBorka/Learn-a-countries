@@ -4,7 +4,7 @@ Learn a countries is a project, that was created as test task for XX company. It
 
 How to launch backend part off app?
 
-1) Clone app from GitHub using "git clone https://github.com/MateuszBorka/Learn-a-countries/" command (you should be in a folder, where you wan't app to be installed) or simply downloading ZIP of repository from web page using "Clone" button.
+1) Download app from GitHub using "code" button as ZIP archive. Unpack it, and start terminal from Learn-a-countries-master(from which you can see Dockerfile)
 2) Make sure that Docker engine is running on your PC.
 3) Go to the main folder of repository(Learn-a-countries).
 4) Use console command "docker build -t learn-a-countries-back:1 .". That will craete a docker image, it is a necessary component while launching a docker container. Wait for terminal to end execution.
